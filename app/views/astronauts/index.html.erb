@@ -1,0 +1,13 @@
+<div class = 'stats_box'>Average Age: <%= @average_age %></div>
+<div class = 'mission_box'>
+    <% @missions.each do |mission| %>
+        <li>Mission Name: <%= mission.title %></li>
+    <% end %>
+</div>
+
+
+<% @astronauts.each do |astronaut| %>
+    <li><%= astronaut.name %></li>
+    <li><%= astronaut.age %></li>
+    <li><%= astronaut.job %></li>
+<% end %>
